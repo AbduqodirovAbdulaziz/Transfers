@@ -84,9 +84,9 @@ def birinchi(request):
 
 def accurate_predictions(request):
     context = {
-        "transfers": Transfer.objects.order_by('-narx')[:150]
+        "transfers": Transfer.objects.order_by("-narx")[:150]
     }
-    return render(request, 'stats/150-accurate-predictions.html', context)
+    return render(request, '150-accurate-predictions.html', context)
 
 
 def ikkinchi(request):

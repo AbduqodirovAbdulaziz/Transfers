@@ -27,8 +27,8 @@ urlpatterns = [
                   path('uchinchi/', uchinchi, name='uchinchi'),
                   path('tortinchi/', tortinchi, name='tortinchi'),
 
-                  path('accurate_predictions/', accurate_predictions),
-                  path('top_50_clubs/', top_50_clubs),
-                  path('transfers_record/', transfers_record),
+                  path('accurate_predictions/', accurate_predictions, name='ac_p'),
+                  path('top_50_clubs/', top_50_clubs,name='top_50_clubs'),
+                  path('transfers_record/', transfers_record, name='transfers_record'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
